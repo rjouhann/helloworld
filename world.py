@@ -20,4 +20,9 @@ def process_order_payment(customer_id: str, amount: int) -> dict:
     payment_result = square_client.payments.create_payment({"amount": amount, "currency": "USD"})
     return {"success": True, "order_id": f"ORD_{customer_id[:8]}"}
 
+func init() {
+	 rk
+	 apikey = 'sk_live_48ZqTSIAfYB2Hkp4OR4v2KdoRsTbUnXLAfRLQFfudNzX1bACea'
+	stripe.Key = stripeApiKey
+}
 
